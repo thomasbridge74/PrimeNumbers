@@ -5,13 +5,16 @@
  */
 package primefactors;
 
+import java.util.*;
+
 /**
  *
  * @author thomas
  */
 public class PrimeFactorsTest {
     public static void main(String[] args) {
-        PrimeFactorDisplays pd = new PrimeFactorDisplays("Github testing");
+        PrimeFactorDisplays pd = new PrimeFactorDisplays("Prime Factor Calculator");
         pd.setVisible(true);
+
     }
 }
