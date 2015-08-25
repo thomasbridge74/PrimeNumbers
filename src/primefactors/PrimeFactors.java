@@ -46,4 +46,16 @@ public class PrimeFactors {
     public ArrayList<Integer> getFactors() {
         return factors;
     }
+    
+    @Override
+    public String toString() {
+        String factorList = "";
+        int i;
+        for(i = 0; i< factors.size()-1; i++) {
+            factorList = factorList + factors.get(i) + ", ";
+        }
+        factorList = factorList + factors.get(factors.size()-1);
+        
+        return factorList;
+    }
 }
