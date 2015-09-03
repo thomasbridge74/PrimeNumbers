@@ -58,4 +58,13 @@ public class PrimeFactors {
         
         return factorList;
     }
+    
+    public boolean isPrime() {
+        if(factors.size() == 1) {
+            return true;
+        } else {
+            return false;
+        }
+        
+    }
 }
