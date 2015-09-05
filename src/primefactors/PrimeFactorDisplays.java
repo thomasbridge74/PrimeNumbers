@@ -64,9 +64,11 @@ public class PrimeFactorDisplays extends JFrame {
                 
             } catch (NumberFormatException e) {
                 isPrime.setText("That is not an integer you've entered");
+                showFactors.setText("");
                 setTitle("Input Error");
             } catch (ArrayIndexOutOfBoundsException e) {
                 isPrime.setText("Please enter an integer > 1");
+                showFactors.setText("");
                 setTitle("Input Error");
             }
         }
