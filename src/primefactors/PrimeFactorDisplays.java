@@ -51,7 +51,7 @@ public class PrimeFactorDisplays extends JFrame {
         public void actionPerformed(ActionEvent a)
         {
             try {
-                int number = Integer.parseInt(inputTextfield.getText());
+                long number = Long.parseLong(inputTextfield.getText());
                 setTitle("Factors of " + number);
                 PrimeFactors calculator = new PrimeFactors(number);
                 showFactors.setText(calculator.toString());

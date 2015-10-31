@@ -13,11 +13,11 @@ import java.util.*;
  */
 public class PrimeFactors {
     // Use ArrayList to hold the factors... 
-    private ArrayList<Integer>factors = new ArrayList<Integer>();
-    private int numberToFactor;
+    private ArrayList<Long>factors = new ArrayList<Long>();
+    private long numberToFactor;
     
-    public PrimeFactors(int n) {
-        int currentFactorToTest = 2;
+    public PrimeFactors(long n) {
+        long currentFactorToTest = 2;
         numberToFactor = n;
         
         while(n > 1) {
@@ -31,7 +31,7 @@ public class PrimeFactors {
         }
     }
     
-    public int getNumber() {
+    public long getNumber() {
         return numberToFactor;
     }
     
@@ -43,7 +43,7 @@ public class PrimeFactors {
         System.out.println();
     }
     
-    public ArrayList<Integer> getFactors() {
+    public ArrayList<Long> getFactors() {
         return factors;
     }
     
