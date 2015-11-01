@@ -90,11 +90,16 @@ public class PrimeFactors {
      *
      */
     public void printFactors() {
-        int i;
-        for(i = 0; i< factors.size(); i++) {
-            System.out.print(factors.get(i) + " ");
+        if(completed) {
+            int i;
+            for(i = 0; i< factors.size(); i++) {
+                System.out.print(factors.get(i) + " ");
+            }
+            System.out.println();
+        } else {
+            System.out.println("Calculations not done yet");
         }
-        System.out.println();
+        
     }
     
     /**
@@ -103,6 +108,14 @@ public class PrimeFactors {
      */
     public ArrayList<Long> getFactors() {
         return factors;
+    }
+    
+    public long getCurrentCalculationPoint() {
+        return currentFactorToTest;
+    }
+    
+    public boolean getCalculationStatus() {
+        return completed;
     }
     
     @Override
