@@ -53,8 +53,9 @@ public class PrimeFactors {
         long n = numberToFactor;
         currentFactorToTest =2;
         // Note - this should only run when currentFactorToTest == 2:
+        // This gets stuck in a perpetual loop when n == 0 
         
-        while(n % currentFactorToTest == 0) {
+        while((n % currentFactorToTest == 0) && (n>1)) {
             factors.add(currentFactorToTest);
             n = n / currentFactorToTest;
         }
